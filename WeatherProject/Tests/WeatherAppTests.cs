@@ -35,6 +35,25 @@ namespace WeatherProject.Tests
             string dtlenght = weatherAppService.weatherAppDTO.weatherAppRoot.list[0].dt.ToString();
             Assert.AreEqual(10, dtlenght.Length);
         }
+        [Test()]
+        public void TemperaturePrincipalTest()
+        {
+            Assert.Greater(400, weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.temp);
+        }
+        // checking if its less than 500 Kelvins (impossibly high temperature)
+        [Test()]
+        public void MinimalTemperatureValue()
+        {
+            Assert.LessOrEqual(0, weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.temp_min);
+            //lowest ever recorded temperature on earth
+        }
+        [Test()]
+        public void MaximalTemperatureValue()
+        {
+            Assert.GreaterOrEqual(340, weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.temp_max);
+        // highest temperature ever recorded on earth
+         }
+
 
 
 
