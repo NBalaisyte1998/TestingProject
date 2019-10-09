@@ -68,6 +68,22 @@ namespace WeatherProject.Tests
         {
             Assert.IsNotNull(weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.temp);
         }
+        [Test()]
+        public void PressurePrincipalTest()
+        {
+            Assert.LessOrEqual(400, weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.pressure);
+        }
+        [Test ()]
+        public void PressureNotNull()
+        {
+            Assert.NotNull(weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.pressure);
+        }
+        [Test ()]
+        public void SeaLevelPrincipialTest()
+        {
+            Assert.LessOrEqual(-400, weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.sea_level);
+        }
+
 
 
 
