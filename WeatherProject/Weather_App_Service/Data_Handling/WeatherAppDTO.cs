@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace WeatherProject.Weather_App_Service.Data_Handling
 {
-    class Class1
+    public class WeatherAppDTO
     {
+        public WeatherAppRoot weatherAppRoot { get; set; }
+        public void DeserializeLatestRates(String LatestRatesResponse)
+        {
+            weatherAppRoot = JsonConvert.DeserializeObject<weatherAppRoot>(WeatherAppResponse);
+        }
+
     }
 }
