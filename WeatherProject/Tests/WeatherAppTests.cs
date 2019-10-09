@@ -53,6 +53,23 @@ namespace WeatherProject.Tests
             Assert.GreaterOrEqual(340, weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.temp_max);
         // highest temperature ever recorded on earth
          }
+        [Test()]
+        public void MinimalTemperaturenotNull()
+        {
+            Assert.IsNotNull(weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.temp);
+        }
+        [Test()]
+        public void MaximalTemperatureIsnotNull()
+        {
+            Assert.IsNotNull(weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.temp_max);
+        }
+        [Test()]
+        public void TemperaturePrincipalTestIsNotNuLL()
+        {
+            Assert.IsNotNull(weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.temp);
+        }
+
+
 
 
 
