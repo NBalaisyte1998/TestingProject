@@ -12,16 +12,17 @@ namespace WeatherProject.Weather_App_Service
     class WeatherAppService
     {
         public WeatherAppDTO weatherAppDTO = new WeatherAppDTO();
-        public WeatherAppService weatherAppService = new WeatherAppService();
+        //public WeatherAppService weatherAppService = new WeatherAppService();
         public JObject WeatherJSon;
 
-        public WeatherAppManager weatherAppManager = new WeatherAppManager();
+        public WeatherManager weatherAppManager = new WeatherManager();
 
 
         public WeatherAppService()  
         {
-            weatherAppDTO.DeserializeWeatherApp(WeatherManager.);
-            WeatherJSon = JObject.Parse(WeatherManager.GetLatestRates());
+            weatherAppDTO.DeserializeWeatherApp(weatherAppManager.GetWeather());
+            WeatherJSon = JObject.Parse(weatherAppManager.GetWeather());
         }
+    
     }
 }

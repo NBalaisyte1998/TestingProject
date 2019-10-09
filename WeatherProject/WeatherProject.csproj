@@ -45,6 +45,7 @@
       <HintPath>packages\RestSharp.106.6.10\lib\net452\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -58,7 +59,7 @@
     <Compile Include="Tests\WeatherAppTests.cs" />
     <Compile Include="WeatherAppConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Weather_App_Service\Class1.cs" />
+    <Compile Include="Weather_App_Service\WeatherAppService.cs" />
     <Compile Include="Weather_App_Service\Data_Handling\WeatherAppModel.cs" />
     <Compile Include="Weather_App_Service\Data_Handling\WeatherAppDTO.cs" />
     <Compile Include="Weather_App_Service\HTTPS_Manager\WeatherAppManager.cs" />
