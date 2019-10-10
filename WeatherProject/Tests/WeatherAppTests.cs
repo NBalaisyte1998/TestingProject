@@ -95,6 +95,41 @@ namespace WeatherProject.Tests
         {
             Assert.IsNotNull(weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.grnd_level);
         }
+        [Test()]
+        public void HumidityPrincipalTest()
+        {
+            Assert.LessOrEqual(0, weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.humidity);
+        }
+        // cant be negative
+        [Test ()]
+        public void HumidityNotNull()
+        {
+            Assert.IsNotNull(weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.humidity);
+        }
+        [Test()]
+        public void TempKfNotNull()
+        {
+            Assert.IsNotNull(weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.temp_kf);
+
+        }
+        [Test()]
+        public void idTestCharacterLenght()
+        {
+            string idlenght = weatherAppService.weatherAppDTO.weatherAppRoot.list[2].weather[0].id.ToString();
+            Assert.AreEqual(3, idlenght.Length);
+        }
+
+        [Test()]
+
+        public void idNotNull()
+        {
+            Assert.IsNotNull(weatherAppService.weatherAppDTO.weatherAppRoot.list[2].weather[0].id);
+        }
+
+
+
+
+
 
 
 
