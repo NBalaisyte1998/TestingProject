@@ -51,8 +51,8 @@ namespace WeatherProject.Tests
         public void MaximalTemperatureValue()
         {
             Assert.GreaterOrEqual(340, weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.temp_max);
-        // highest temperature ever recorded on earth
-         }
+            // highest temperature ever recorded on earth
+        }
         [Test()]
         public void MinimalTemperaturenotNull()
         {
@@ -73,15 +73,27 @@ namespace WeatherProject.Tests
         {
             Assert.LessOrEqual(400, weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.pressure);
         }
-        [Test ()]
+        [Test()]
         public void PressureNotNull()
         {
             Assert.NotNull(weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.pressure);
         }
-        [Test ()]
-        public void SeaLevelPrincipialTest()
+        [Test()]
+        public void SeaLevelPrincipalTest()
         {
             Assert.LessOrEqual(-400, weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.sea_level);
+        }
+        // the lowest point on earth
+        [Test()]
+        public void GroundLevelPrincipalTest()
+        {
+            Assert.LessOrEqual(0, weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.grnd_level);
+        }
+        // because it cant be a negative number
+        [Test()]
+        public void GroundLevelNotNull()
+        {
+            Assert.IsNotNull(weatherAppService.weatherAppDTO.weatherAppRoot.list[1].main.grnd_level);
         }
 
 
