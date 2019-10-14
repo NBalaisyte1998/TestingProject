@@ -16,10 +16,10 @@ RestSharp
 # Set Up for the tests
 
 1) Clone this git repository https://github.com/NBalaisyte1998/TestingProject.git
-Open WeatherProject.sln
-Build the project by clicking on Build -> Build Solution on the menu
-Click on View -> Solution Explorer or press Ctrl+Alt+L to view the Solution Explorer
-Right click on the 'WeatherAppTests' Project file in the Solution Explorer and click 'Manage NuGet Packages..."
-Update NuGet packages/Check that all the packages are installed and updated (see parerequisites above)
-Click on Test -> Windows -> Test Explorer to view the test window
-Click on the green Run All button to execute all tests or Run button to execute selected tests in the Test Explorer
+2)Open WeatherProject.sln
+3)Build the project by clicking on Build -> Build Solution on the menu
+4)Click on View -> Solution Explorer or press Ctrl+Alt+L to view the Solution Explorer
+5)Right click on the 'WeatherAppTests' Project file in the Solution Explorer and click 'Manage NuGet Packages..."
+6)Update NuGet packages/Check that all the packages are installed and updated (see parerequisites above)
+7)Click on Test -> Windows -> Test Explorer to view the test window
+8)Click on the green Run All button to execute all tests or Run button to execute selected tests in the Test Explorer
