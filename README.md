@@ -39,3 +39,11 @@ RestSharp
 7)Click on Test -> Windows -> Test Explorer to view the test window
 
 8)Click on the green Run All button to execute all tests or Run button to execute selected tests in the Test Explorer
+
+
+# Implementation
+
+## WeatherAppService
+## 
+
+
